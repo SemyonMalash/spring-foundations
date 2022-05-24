@@ -1,0 +1,24 @@
+package ru.itsjava.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import ru.itsjava.Animal;
+import ru.itsjava.Lamb;
+import ru.itsjava.Piglet;
+
+@Import(OtherConfig.class)
+@Configuration
+public class Config {
+
+    @Bean("myBestPiglet")
+    public Animal piglet() {
+        return new Piglet();
+    }
+
+    @Bean
+    public Animal lamb() {
+        return new Lamb();
+    }
+}
+
