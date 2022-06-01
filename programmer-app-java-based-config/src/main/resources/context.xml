@@ -4,10 +4,10 @@
       xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="notebookService" class="ru.NotebookServiceImpl"/>
-    <bean id="ioService" class="ru.IOServiceImpl"/>
+    <bean id="notebookService" class="ru.itsjava.services.NotebookServiceImpl"/>
+    <bean id="ioService" class="ru.itsjava.services.IOServiceImpl"/>
 
-    <bean id="programmerService" class="ru.ProgrammerServiceImpl">
+    <bean id="programmerService" class="ru.itsjava.services.ProgrammerServiceImpl">
         <constructor-arg ref="notebookService"/>
         <constructor-arg ref="ioService"/>
     </bean>
