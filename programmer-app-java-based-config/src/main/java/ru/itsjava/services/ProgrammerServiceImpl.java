@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class ProgrammerServiceImpl implements ProgrammerService {
-    private final NotebookServiceImpl notebookService;
-    private final IOServiceImpl ioService;
+    private final NotebookService notebookService;
+    private final IOService ioService;
 
     @Override
     public void hiToNewProgrammer() {

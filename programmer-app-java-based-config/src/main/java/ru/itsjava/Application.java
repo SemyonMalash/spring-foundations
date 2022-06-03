@@ -1,14 +1,18 @@
 package ru.itsjava;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.PropertySource;
 import ru.itsjava.services.ProgrammerService;
 
+@ComponentScan
+@PropertySource("classpath:app.properties")
 public class Application {
 
     public static void main(String[] args) {
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("context.xml");
+                new AnnotationConfigApplicationContext(Application.class);
 
         ProgrammerService programmerService = context.getBean("programmerService", ProgrammerService.class);
         programmerService.hiToNewProgrammer();
