@@ -13,6 +13,6 @@ public class Application {
                 new AnnotationConfigApplicationContext(Application.class);
 
         CoffeeService coffeeService = context.getBean("coffeeService", CoffeeService.class);
-        coffeeService.CoffeeHouse();
+        coffeeService.coffeeHouse();
     }
 }

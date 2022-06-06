@@ -15,11 +15,11 @@ public class CoffeeServiceImpl implements CoffeeService {
         } else if (inputString.equals("130")) {
             return new Coffee("Latte", 130);
         }
-        return null;
+        throw new NullPointerException();
     }
 
     @Override
-    public void CoffeeHouse() {
+    public void coffeeHouse() {
         System.out.println("Добрый день, введите сумму для оплаты");
         inputString = ioService.input();
         System.out.println(getCoffeeByPrice());

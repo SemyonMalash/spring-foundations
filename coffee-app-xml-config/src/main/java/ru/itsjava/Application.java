@@ -11,6 +11,6 @@ public class Application {
                 new ClassPathXmlApplicationContext("context.xml");
 
         CoffeeService coffeeService = context.getBean("coffeeService", CoffeeService.class);
-        coffeeService.CoffeeHouse();
+        coffeeService.coffeeHouse();
     }
 }
