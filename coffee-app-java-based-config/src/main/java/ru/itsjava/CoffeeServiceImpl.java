@@ -2,15 +2,15 @@ package ru.itsjava;
 
 import lombok.RequiredArgsConstructor;
 import ru.itsjava.domain.Coffee;
+import ru.itsjava.services.CoffeeService;
 
 @RequiredArgsConstructor
 public class CoffeeServiceImpl implements CoffeeService {
     private final IOServiceImpl ioService;
-    private String inputString;
 
     @Override
     public Coffee getCoffeeByPrice() throws IncorrectPriceException {
-        inputString = ioService.input();
+        String inputString = ioService.input();
         if (inputString.equals("100")) {
             return new Coffee("Cappuccino", 100);
         } else if (inputString.equals("130")) {

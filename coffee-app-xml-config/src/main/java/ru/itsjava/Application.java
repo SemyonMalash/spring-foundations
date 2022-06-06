@@ -2,6 +2,7 @@ package ru.itsjava;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import ru.itsjava.services.CoffeeService;
 
 public class Application {
 
