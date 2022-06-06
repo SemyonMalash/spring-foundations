@@ -1,6 +1,7 @@
-package ru.itsjava;
+package ru.itsjava.services.impl;
 
 import lombok.RequiredArgsConstructor;
+import ru.itsjava.IncorrectPriceException;
 import ru.itsjava.domain.Coffee;
 import ru.itsjava.services.CoffeeService;
 
