@@ -1,9 +1,9 @@
 package ru.itsjava.services.impl;
 
 import lombok.RequiredArgsConstructor;
-import ru.itsjava.IncorrectPriceException;
+import ru.itsjava.services.exceptions.IncorrectPriceException;
 import ru.itsjava.domain.Coffee;
-import ru.itsjava.services.CoffeeService;
+import ru.itsjava.services.interfaces.CoffeeService;
 
 @RequiredArgsConstructor
 public class CoffeeServiceImpl implements CoffeeService {

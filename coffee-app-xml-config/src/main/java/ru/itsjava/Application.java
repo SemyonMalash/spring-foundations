@@ -2,7 +2,8 @@ package ru.itsjava;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ru.itsjava.services.CoffeeService;
+import ru.itsjava.services.exceptions.IncorrectPriceException;
+import ru.itsjava.services.interfaces.CoffeeService;
 
 public class Application {
 
