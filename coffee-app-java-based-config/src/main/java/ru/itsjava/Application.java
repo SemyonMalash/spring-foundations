@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import ru.itsjava.services.exceptions.IncorrectPriceException;
-import ru.itsjava.services.interfaces.CoffeeService;
+import ru.itsjava.services.CoffeeService;
 
 @ComponentScan
 public class Application {

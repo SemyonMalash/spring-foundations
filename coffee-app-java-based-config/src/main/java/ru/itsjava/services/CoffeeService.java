@@ -1,4 +1,4 @@
-package ru.itsjava.services.interfaces;
+package ru.itsjava.services;
 
 import ru.itsjava.services.exceptions.IncorrectPriceException;
 import ru.itsjava.domain.Coffee;
