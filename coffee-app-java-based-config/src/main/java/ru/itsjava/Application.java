@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IncorrectPriceException {
 
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(Application.class);

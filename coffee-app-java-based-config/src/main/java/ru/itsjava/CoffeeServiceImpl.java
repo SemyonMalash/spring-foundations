@@ -9,19 +9,19 @@ public class CoffeeServiceImpl implements CoffeeService {
     private String inputString;
 
     @Override
-    public Coffee getCoffeeByPrice() {
+    public Coffee getCoffeeByPrice() throws IncorrectPriceException {
+        inputString = ioService.input();
         if (inputString.equals("100")) {
             return new Coffee("Cappuccino", 100);
         } else if (inputString.equals("130")) {
             return new Coffee("Latte", 130);
         }
-        throw new NullPointerException();
+        throw new IncorrectPriceException();
     }
 
     @Override
-    public void coffeeHouse() {
+    public void coffeeHouse() throws IncorrectPriceException {
         System.out.println("Добрый день, введите сумму для оплаты");
-        inputString = ioService.input();
         System.out.println(getCoffeeByPrice());
     }
 }
