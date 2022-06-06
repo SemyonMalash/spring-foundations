@@ -3,7 +3,7 @@ package ru.itsjava;
 import ru.itsjava.domain.Coffee;
 
 public interface CoffeeService {
-    Coffee getCoffeeByPrice();
+    Coffee getCoffeeByPrice() throws IncorrectPriceException;
 
-    void coffeeHouse();
+    void coffeeHouse() throws IncorrectPriceException;
 }
