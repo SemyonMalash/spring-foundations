@@ -22,7 +22,7 @@ public class MyConfig {
     }
 
     @Bean
-    public CoffeeService coffeeService(IOServiceImpl ioService) {
+    public CoffeeService coffeeService(IOService ioService) {
         return new CoffeeServiceImpl(ioService);
     }
 }

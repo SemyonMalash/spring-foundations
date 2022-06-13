@@ -1,13 +1,14 @@
 package ru.itsjava.services.impl;
 
 import lombok.RequiredArgsConstructor;
-import ru.itsjava.services.exceptions.IncorrectPriceException;
 import ru.itsjava.domain.Coffee;
 import ru.itsjava.services.CoffeeService;
+import ru.itsjava.services.IOService;
+import ru.itsjava.services.exceptions.IncorrectPriceException;
 
 @RequiredArgsConstructor
 public class CoffeeServiceImpl implements CoffeeService {
-    private final IOServiceImpl ioService;
+    private final IOService ioService;
 
     @Override
     public Coffee getCoffeeByPrice() throws IncorrectPriceException {
