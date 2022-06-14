@@ -13,12 +13,13 @@
         <module>programmer-app-xml-config</module>
         <module>core-java-based</module>
         <module>programmer-app-java-based-config</module>
-        <module>programmer-app-java-based-config</module>
         <module>programmer-app-annotation-based-config</module>
+        <module>programmer-app-boot</module>
         <module>core-annotation-based</module>
         <module>coffee-app-xml-config</module>
         <module>coffee-app-java-based-config</module>
         <module>coffee-app-annotation-based-config</module>
+        <module>coffee-app-boot</module>
         <module>lifecycle-scope-beans</module>
         <module>Proxy</module>
         <module>aop</module>
