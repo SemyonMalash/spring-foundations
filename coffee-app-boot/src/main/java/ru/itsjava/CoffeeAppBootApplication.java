@@ -15,7 +15,4 @@ public class CoffeeAppBootApplication {
 		CoffeeService coffeeService = context.getBean("coffeeService", CoffeeService.class);
 		coffeeService.coffeeHouse();
 	}
-
-
-
 }

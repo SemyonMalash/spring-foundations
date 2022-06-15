@@ -4,12 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.itsjava.domain.Coffee;
 import ru.itsjava.services.CoffeeService;
+import ru.itsjava.services.IOService;
 import ru.itsjava.services.exceptions.IncorrectPriceException;
 
 @Service("coffeeService")
 @RequiredArgsConstructor
 public class CoffeeServiceImpl implements CoffeeService {
-    private final IOServiceImpl ioService;
+    private final IOService ioService;
 
     @Override
     public Coffee getCoffeeByPrice() throws IncorrectPriceException {
